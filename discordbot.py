@@ -2,10 +2,10 @@ from cmath import log
 from distutils.sysconfig import PREFIX
 import discord
 from dotenv import load_dotenv
-import os
-load_dotenv()
 import nextcord
 from nextcord.ext import commands
+import os
+load_dotenv()
 
 PREFIX = os.environ['PREFIX']
 TOKEN = os.environ['TOKEN']
