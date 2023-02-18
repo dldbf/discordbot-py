@@ -54,6 +54,7 @@ async def on_message(message):
         embed.add_field(name="외모", value="6", inline=False)
         embed.add_field(name="성격", value="5", inline=False)
         embed.set_thumbnail(url="")
+        await message.channel.send(embed=embed)
         
     if message.content.startswith(f'{PREFIX}샌찬'):
         await message.channel.send('```cs\n샌찬\n\n성별:남자\n나이:약 16세\n키:173cm\n몸무게:63kg\n혈액형:O\n생일:7월 23일\n종족:능력자\n종아하는 음식:사과 와플\n싫어하는 음식:여주\n출생지:?\n소속:능력자 학교 3학년\n취미:잠자기\n국적:능력자도시\n\n[가족관계]\n\n父 트라오\n母 레이\n兄 제론\n\n[신체특징]\n\n머리가 푸른색이다. 염색을 하더라도 보통 사람보다 더 빨리 돌아오는듯 하다\n눈이 푸른색이다 하지만 밝게 보이지는 않는다\n\n[이명]\n\n불가역\n하늘 대가리\n\n[능력치]\n\n평가 : D\n\n열정 : 3\n지능 : 8\n협조성 : 1\n행동력 : 10\n외모 : 4\n성격 : 1\n```')
