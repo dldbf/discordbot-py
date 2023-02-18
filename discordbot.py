@@ -28,7 +28,7 @@ async def on_message(message):
         await message.channel.send('Hello!')
         
     if message.content == f'{PREFIX}소루':
-        embed = discord.Embed(name="소루", description="여자", color=f169c5)
+        embed = discord.Embed(name="소루", description="여자", color=0x00ff00)
         
         embed.add_field(name="나이", value="약 16세", inline=False)
         embed.add_field(name="키", value="158cm", inline=False)
