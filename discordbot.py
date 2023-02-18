@@ -51,7 +51,7 @@ async def on_message(message):
         embed.add_field(name="열정", value="8", inline=False)
         embed.add_field(name="지능", value="2", inline=False)
         embed.add_field(name="협조성", value="6", inline=False)
-        embed.add_field(name="행동력, value="7", inline=False)
+        embed.add_field(name="행동력", value="7", inline=False)
         embed.add_field(name="외모", value="6", inline=False)
         embed.add_field(name="성격", value="5", inline=False)
         
