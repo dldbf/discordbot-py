@@ -1,9 +1,11 @@
 from cmath import log
 from distutils.sysconfig import PREFIX
-import discord
+import discord, asyncio
 from dotenv import load_dotenv
 import os
 load_dotenv()
+
+client = discord.Client()
 
 PREFIX = os.environ['PREFIX']
 TOKEN = os.environ['TOKEN']
@@ -25,8 +27,37 @@ async def on_message(message):
     if message.content.startswith(f'{PREFIX}hello'):
         await message.channel.send('Hello!')
         
-    if message.content.startswith(f'{PREFIX}소루'):
-        await message.channel.send('```cs\n소루\n\n성별:여자\n나이:약 16세\n키:158cm\n몸무게:49kg\n혈액형:A\n생일:2월 17일\n종족:능력자\n종아하는 음식:시조 컴퍼니 독점 음료\n싫어하는 음식:피망\n출생지:능력자도시 5구역\n소속:능력자 학교 3학년\n취미:리코더볼기\n국적:능력자도시\n\n[가족관계]\n\n父 아라타\n母 히나\n\n[신체특징]\n\n핑큿빛 머리를 핑큿빛 눈을 지니고 있다.\n홍조가 남들보다 더 잘드러난다\n피부가 생각보다 하얀편이다\n절벽이다\n\n[이명]\n\n전격 능력자\n츤데레\n\n[능력치]\n\n평가 : C\n\n열정 : 8\n지능 : 2\n협조성 : 6\n행동력 : 7\n외모 : 6\n성격 : 5\n```')
+    if message.content == f'{PREFIX}소루':
+        embed = discord.Emed(name="소루", description="여자", color=f169c5)
+        
+        embed.add_field(name="나이", value="약 16세", inline=False)
+        embed.add_field(name="키", value="158cm", inline=False)
+        embed.add_field(name="몸무게", value="49kg", inline=False)
+        embed.add_field(name="혈액형", value="A", inline=False)
+        embed.add_field(name="생일", value="2월 17일", inline=False)
+        embed.add_field(name="종족", value="능력자", inline=False)
+        embed.add_field(name="종아하는 음식", value="시조 컴퍼니 독점 음료", inline=False)
+        embed.add_field(name="싫어하는 음식", value="피망", inline=False)
+        embed.add_field(name="출생지", value="능력자도시 5구역", inline=False)
+        embed.add_field(name="종족", value="능력자", inline=False)
+        embed.add_field(name="소속", value="능력자 학교 3학년", inline=False)
+        embed.add_field(name="취미", value="리코더불기", inline=False)
+        embed.add_field(name="국적", value="능력자도시", inline=False)
+        embed.add_field(name="가족관계", value="父 아라타 母 히나", inline=False)
+        embed.add_field(name="신체특징", value="핑큿빛 머리를 핑큿빛 눈을 지니고 있다, 홍조가 남들보다 더 잘드러난다, 피부가 생각보다 하얀편이다, 절벽이다", inline=False)
+        embed.add_field(name="이명", value="전격 능력자, 츤데레", inline=False)
+        embed.add_field(name="능력치", inline=False)
+        embed.add_field(name="", inline=False)
+        embed.add_field(name="평가 : C", inline=False)
+        embed.add_field(name="", inline=False)
+        embed.add_field(name="열정 : 8", inline=False)
+        embed.add_field(name="지능 : 2", inline=False)
+        embed.add_field(name="협조성 : 6", inline=False)
+        embed.add_field(name="행동력 : 7", inline=False)
+        embed.add_field(name="외모 : 6", inline=False)
+        embed.add_field(name="성격 : 5", inline=False)
+        
+        embed.set_thumbnail{url=""}
         
     if message.content.startswith(f'{PREFIX}샌찬'):
         await message.channel.send('```cs\n샌찬\n\n성별:남자\n나이:약 16세\n키:173cm\n몸무게:63kg\n혈액형:O\n생일:7월 23일\n종족:능력자\n종아하는 음식:사과 와플\n싫어하는 음식:여주\n출생지:?\n소속:능력자 학교 3학년\n취미:잠자기\n국적:능력자도시\n\n[가족관계]\n\n父 트라오\n母 레이\n兄 제론\n\n[신체특징]\n\n머리가 푸른색이다. 염색을 하더라도 보통 사람보다 더 빨리 돌아오는듯 하다\n눈이 푸른색이다 하지만 밝게 보이지는 않는다\n\n[이명]\n\n불가역\n하늘 대가리\n\n[능력치]\n\n평가 : D\n\n열정 : 3\n지능 : 8\n협조성 : 1\n행동력 : 10\n외모 : 4\n성격 : 1\n```')
