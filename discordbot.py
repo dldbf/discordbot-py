@@ -29,7 +29,6 @@ async def on_message(message):
         
     if message.content == f'{PREFIX}소루':
         embed = discord.Embed(name="소루", description="여자", color=0x00ff00)
-        
         embed.add_field(name="나이", value="약 16세", inline=False)
         embed.add_field(name="키", value="158cm", inline=False)
         embed.add_field(name="몸무게", value="49kg", inline=False)
@@ -54,7 +53,6 @@ async def on_message(message):
         embed.add_field(name="행동력", value="7", inline=False)
         embed.add_field(name="외모", value="6", inline=False)
         embed.add_field(name="성격", value="5", inline=False)
-        
         embed.set_thumbnail(url="")
         
     if message.content.startswith(f'{PREFIX}샌찬'):
