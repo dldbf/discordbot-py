@@ -82,7 +82,7 @@ async def on_message(message):
         embed.add_field(name="행동력", value="10", inline=False)
         embed.add_field(name="외모", value="4", inline=False)
         embed.add_field(name="성격", value="1", inline=False)
-        embed.set_thumbnail(url"")
+        embed.set_thumbnail(url="")
         await message.channel.send(embed=embed)
         
    if message.content == f'{PREFIX}도기':
