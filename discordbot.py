@@ -85,8 +85,8 @@ async def on_message(message):
         embed.set_thumbnail(url="")
         await message.channel.send(embed=embed)
         
-   if message.content == f'{PREFIX}도기':
-        embed = discord.Embed(name="도기", description="소루", color=0x00ff00)
+    if message.content == f'{PREFIX}도기':
+        embed = discord.Embed(name="도기", description="도기", color=0x00ff00)
         embed.add_field(name="성별", value="남자", inline=False)
         embed.add_field(name="나이", value="약 16세", inline=False)
         embed.add_field(name="키", value="175cm", inline=False)
