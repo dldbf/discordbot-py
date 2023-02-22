@@ -228,6 +228,12 @@ async def on_message(message):
         embed.add_field(name="성격", value="8", inline=False)
         embed.set_thumbnail(url="")
         await message.channel.send(embed=embed)
+        
+    if message.content == f'{PREFIX}능도스토커':
+        await message.channel.send("아쉽게도 저에 대한 논문은 없습니다.")
+        
+    if message.content == f'{PREFIX}이알':
+        await message.channel.send("해당 캐릭터는 업데이트 진행 예정입니다")
 
 try:
     client.run(TOKEN)
