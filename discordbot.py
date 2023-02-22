@@ -200,8 +200,8 @@ async def on_message(message):
         embed.add_field(name="성격", value="2", inline=False)
         embed.set_thumbnail(url="")
         await message.channel.send(embed=embed)
-    if message.content == f'{PREFIX}미나토':  
-        embed = discord.Embed(name="미나토", description="미나토", color=0x474747)
+    if message.content == f'{PREFIX}미나토 타다요시':  
+        embed = discord.Embed(name="미나토 타다요시", description="미나토 타다요시", color=0x474747)
         embed.add_field(name="성별", value="남자", inline=False)
         embed.add_field(name="나이", value="약 32세", inline=False)
         embed.add_field(name="키", value="187cm", inline=False)
