@@ -233,7 +233,7 @@ async def on_message(message):
         await message.channel.send("아쉽게도 저에 대한 논문은 없습니다.")
         
     if message.content == f'{PREFIX}이알':
-        await message.channel.send("해당 캐릭터는 업데이트 진행 예정입니다")
+        await message.channel.send("스토킹 중...")
 
 try:
     client.run(TOKEN)
