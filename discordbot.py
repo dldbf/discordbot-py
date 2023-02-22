@@ -216,7 +216,7 @@ async def on_message(message):
         embed.add_field(name="취미", value="뜨개질", inline=False)
         embed.add_field(name="국적", value="능력자도시", inline=False)
         embed.add_field(name="가족관계", value="?", inline=False)
-        embed.add_field(name="신체특징", value="검은색 눈을 가지고 있다\n능력자도시의 몇 없는 흑발이다\n시력이 좋지 않아 평소에는 렌즈를 착용하는걸로 보인다", inline=False)
+        embed.add_field(name="신체특징", value="회색 눈을 가지고 있다\n능력자도시의 몇 없는 흑발이다\n시력이 좋지 않아 평소에는 렌즈를 착용하는걸로 보인다", inline=False)
         embed.add_field(name="이명", value="최강의 무능력자\n미나토", inline=False)
         embed.add_field(name="능력치", value="", inline=False)
         embed.add_field(name="평가", value="A", inline=False)
