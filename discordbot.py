@@ -159,7 +159,7 @@ async def on_message(message):
         embed.add_field(name="취미", value="귀중품 모으기", inline=False)
         embed.add_field(name="국적", value="능력자도시", inline=False)
         embed.add_field(name="가족관계", value="?", inline=False)
-        embed.add_field(name="신체특징", value="오만한 성격의 소유자다\n보라색 머리를 가지고 있다\n오른쪽 귀에 점이있다\n평발이다", inline=False)
+        embed.add_field(name="신체특징", value="오만한 성격의 소유자로 보라색 머리를 가지고 있다\n오른쪽 귀에 점이있다\n평발이다", inline=False)
         embed.add_field(name="이명", value="아이넨 간부 1\n재벌집 막내아들", inline=False)
         embed.add_field(name="능력치", value="", inline=False)
         embed.add_field(name="평가", value="C", inline=False)
