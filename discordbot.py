@@ -380,7 +380,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
     
     if message.content.startswith(f'{PREFIX}정샌찬'):
-        await message.channel.send('https://discord.com/channels/964428874136031253/969220566567489566/1078930565845221406')
+        await message.channel.send('https://cdn.discordapp.com/attachments/969220566567489566/1078932702255923260/Sanmas.gif')
         
 try:
     client.run(TOKEN)
