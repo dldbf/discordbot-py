@@ -275,7 +275,7 @@ async def on_message(message):
         embed.add_field(name="취미", value="그림그리기", inline=False)
         embed.add_field(name="국적", value="능력자도시", inline=False)
         embed.add_field(name="가족관계", value="父 로스 母 에리나", inline=False)
-        embed.add_field(name="신체특징", value="하프 트윈테일의 머리카락을 가지고 있다\n물의 능력자이기 때문에 머리가 금방 마른다\n부끄러움을 많이 타는 성격이지만 자존심은 세다\n~인것인거에요 같은 말투를 쓴다\n겁이 많지만 지능적이다", inline=False)
+        embed.add_field(name="신체특징", value="하프 트윈테일의 머리카락을 가지고 있다\n물의 능력자이기 때문에 머리가 금방 마른다\n부끄러움을 많이 타는 성격이지만 자존심은 세다\n~인것이에요 같은 말투를 쓴다\n겁이 많지만 지능적이다", inline=False)
         embed.add_field(name="이명", value="없음", inline=False)
         embed.add_field(name="능력치", value="", inline=False)
         embed.add_field(name="평가", value="C+", inline=False)
