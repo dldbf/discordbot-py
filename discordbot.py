@@ -336,7 +336,7 @@ async def on_message(message):
         embed.add_field(name="신체특징", value="갈색머리를 가지고 있으며 곱슬머리이다\n머리카락으로 한쪽눈을 가리고 있다\n가끔 살점이 보이지않는다", inline=False)
         embed.add_field(name="이명", value="토막시체", inline=False)
         embed.add_field(name="능력치", value="", inline=False)
-        embed.add_field(name="평가", value="C", inline=False)
+        embed.add_field(name="평가", value="C+", inline=False)
         embed.add_field(name="열정", value="7", inline=False)
         embed.add_field(name="지능", value="6", inline=False)
         embed.add_field(name="협조성", value="8", inline=False)
