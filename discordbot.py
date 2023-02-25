@@ -345,6 +345,9 @@ async def on_message(message):
         embed.add_field(name="성격", value="7", inline=False)
         embed.set_thumbnail(url="")
         await message.channel.send(embed=embed)
+        
+    if message.content.startswith(f'{PREFIX}리차드'):
+        await message.channel.send('스토킹 중...')
 try:
     client.run(TOKEN)
 except discord.errors.LoginFailure as e:
