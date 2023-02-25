@@ -348,6 +348,36 @@ async def on_message(message):
         
     if message.content.startswith(f'{PREFIX}리차드'):
         await message.channel.send('스토킹 중...')
+    
+    if message.content.startswith(f'{PREFIX}에런 이즈라엘'):
+        embed = discord.Embed(name="WARNING", description="이 문서는 조작된 문서입니다", color=0x3a6f99)
+        embed.add_field(name="이름", value="에런 이즈라엘", inline=False)
+        embed.add_field(name="성별", value="남자", inline=False)
+        embed.add_field(name="나이", value="?", inline=False)
+        embed.add_field(name="키", value="183cm", inline=False)
+        embed.add_field(name="몸무게", value="81kg", inline=False)
+        embed.add_field(name="혈액형", value="O", inline=False)
+        embed.add_field(name="생일", value="?", inline=False)
+        embed.add_field(name="종족", value="능력자", inline=False)
+        embed.add_field(name="좋아하는 음식", value="?", inline=False)
+        embed.add_field(name="싫어하는 음식", value="?", inline=False)
+        embed.add_field(name="출생지", value="?", inline=False)
+        embed.add_field(name="소속", value="?", inline=False)
+        embed.add_field(name="취미", value="?", inline=False)
+        embed.add_field(name="국적", value="?", inline=False)
+        embed.add_field(name="가족관계", value="?", inline=False)
+        embed.add_field(name="신체특징", value="하늘색 머리를 지닌 장발\n왼쪽눈의 찔린듯한 상저가 있는걸로 보임\n밤하늘의 초계반에서만 출현", inline=False)
+        embed.add_field(name="이명", value="에런 이즈라엘", inline=False)
+        embed.add_field(name="능력치", value="", inline=False)
+        embed.add_field(name="평가", value="B", inline=False)
+        embed.add_field(name="열정", value="9", inline=False)
+        embed.add_field(name="지능", value="10", inline=False)
+        embed.add_field(name="협조성", value="1", inline=False)
+        embed.add_field(name="행동력", value="10", inline=False)
+        embed.add_field(name="외모", value="8", inline=False)
+        embed.add_field(name="성격", value="3", inline=False)
+        embed.set_thumbnail(url="")
+        await message.channel.send(embed=embed)
 try:
     client.run(TOKEN)
 except discord.errors.LoginFailure as e:
