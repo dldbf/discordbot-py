@@ -366,7 +366,7 @@ async def on_message(message):
         embed.add_field(name="취미", value="?", inline=False)
         embed.add_field(name="국적", value="?", inline=False)
         embed.add_field(name="가족관계", value="?", inline=False)
-        embed.add_field(name="신체특징", value="하늘색 머리를 지닌 장발\n왼쪽눈의 찔린듯한 상저가 있는걸로 보임\n밤하늘의 초계반에서만 출현", inline=False)
+        embed.add_field(name="신체특징", value="하늘색 머리를 지닌 장발\n왼쪽눈의 찔린듯한 상처가 있는걸로 보임\n밤하늘의 초계반에서만 출현", inline=False)
         embed.add_field(name="이명", value="에런 이즈라엘", inline=False)
         embed.add_field(name="능력치", value="", inline=False)
         embed.add_field(name="평가", value="B", inline=False)
@@ -378,6 +378,10 @@ async def on_message(message):
         embed.add_field(name="성격", value="3", inline=False)
         embed.set_thumbnail(url="")
         await message.channel.send(embed=embed)
+    
+    if message.content.startswith(f'{PREFIX}정샌찬'):
+        await message.channel.send('https://discord.com/channels/964428874136031253/969220566567489566/1078930565845221406')
+        
 try:
     client.run(TOKEN)
 except discord.errors.LoginFailure as e:
