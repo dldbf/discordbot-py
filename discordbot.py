@@ -447,7 +447,7 @@ async def on_message(message):
         embed.add_field(name="싫어하는 음식", value="에스프레소", inline=False)
         embed.add_field(name="출생지", value="능력자도시 9구역", inline=False)
         embed.add_field(name="소속", value="능력자학교", inline=False)
-        embed.add_field(name="취미", value="검도", inline=False)
+        embed.add_field(name="취미", value="맛집탐방", inline=False)
         embed.add_field(name="국적", value="능력자도시", inline=False)
         embed.add_field(name="가족관계", value="父 母 夫 女", inline=False)
         embed.add_field(name="신체특징", value="벚꽃색의 머리카락과 눈.. 심지어 이름마저도 벚꽃이라는 의미를 가지고 있다\n벚꽃 머리띠를 하고 다닌다\n'거유'이다(컵 사이즈 D)\n남편과 아이가 있다\n아줌마라는 소리를 듣는것을 싫어한다\n술을 잘마신다", inline=False)
