@@ -347,7 +347,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
         
     if message.content == f'{PREFIX}리차드':
-        embed = discord.Embed(name="리차드", description="리차드", color=0x7e5935)
+        embed = discord.Embed(name="리차드", description="리차드", color=0x631500)
         embed.add_field(name="성별", value="남자", inline=False)
         embed.add_field(name="나이", value="약 44세", inline=False)
         embed.add_field(name="키", value="185cm", inline=False)
@@ -406,7 +406,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
        
     if message.content == f'{PREFIX}레안':
-        embed = discord.Embed(name="레안", description="레안", color=0x7e5935)
+        embed = discord.Embed(name="레안", description="레안", color=0x971374)
         embed.add_field(name="성별", value="여자", inline=False)
         embed.add_field(name="나이", value="약 24세", inline=False)
         embed.add_field(name="키", value="168cm", inline=False)
@@ -435,7 +435,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
         
     if message.content == f'{PREFIX}사쿠라':
-        embed = discord.Embed(name="사쿠라", description="사쿠라", color=0x7e5935)
+        embed = discord.Embed(name="사쿠라", description="사쿠라", color=0xffa8f9)
         embed.add_field(name="성별", value="여자", inline=False)
         embed.add_field(name="나이", value="약 24세", inline=False)
         embed.add_field(name="키", value="167cm", inline=False)
