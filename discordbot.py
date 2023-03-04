@@ -482,7 +482,7 @@ async def on_message(message):
         embed.add_field(name="신체특징", value="능력자학교의 교감 중 최강의 교감이다\n가족관계에서는 부인(처)로 표현되었지만 약혼녀이다\n짙은 초록색의 눈과 머리를 가지고 있다\n눈치가 상당히 빠른 편이다 작중 레안과 미나토의 싸움을 중재시키기도 한다", inline=False)
         embed.add_field(name="이명", value="초신성", inline=False)
         embed.add_field(name="능력치", value="", inline=False)
-        embed.add_field(name="평가", value="c", inline=False)
+        embed.add_field(name="평가", value="C", inline=False)
         embed.add_field(name="열정", value="5", inline=False)
         embed.add_field(name="지능", value="7", inline=False)
         embed.add_field(name="협조성", value="6", inline=False)
