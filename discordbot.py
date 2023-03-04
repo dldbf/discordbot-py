@@ -462,7 +462,36 @@ async def on_message(message):
         embed.add_field(name="성격", value="9", inline=False)
         embed.set_thumbnail(url="")
         await message.channel.send(embed=embed)
-    
+        
+    if message.content == f'{PREFIX}델타':
+        embed = discord.Embed(name="델타", description="델타", color=0x036334)
+        embed.add_field(name="성별", value="남자", inline=False)
+        embed.add_field(name="나이", value="약 27세", inline=False)
+        embed.add_field(name="키", value="185cm", inline=False)
+        embed.add_field(name="몸무게", value="72kg", inline=False)
+        embed.add_field(name="혈액형", value="O", inline=False)
+        embed.add_field(name="생일", value="11월 30일", inline=False)
+        embed.add_field(name="종족", value="능력자", inline=False)
+        embed.add_field(name="좋아하는 음식", value="햄버거", inline=False)
+        embed.add_field(name="싫어하는 음식", value="피망", inline=False)
+        embed.add_field(name="출생지", value="능력자도시 12구역", inline=False)
+        embed.add_field(name="소속", value="능력자학교", inline=False)
+        embed.add_field(name="취미", value="영화보", inline=False)
+        embed.add_field(name="국적", value="능력자도시", inline=False)
+        embed.add_field(name="가족관계", value="父 母 妻", inline=False)
+        embed.add_field(name="신체특징", value="능력자학교의 교감 중 최강의 교감이다\n가족관계에서는 부인(처)로 표현되었지만 약혼녀이다\n짙은 초록색의 눈과 머리를 가지고 있다\n눈치가 상당히 빠른 편이다 작중 레안과 미나토의 싸움을 중재시키기도 한다", inline=False)
+        embed.add_field(name="이명", value="초신성", inline=False)
+        embed.add_field(name="능력치", value="", inline=False)
+        embed.add_field(name="평가", value="c", inline=False)
+        embed.add_field(name="열정", value="5", inline=False)
+        embed.add_field(name="지능", value="7", inline=False)
+        embed.add_field(name="협조성", value="6", inline=False)
+        embed.add_field(name="행동력", value="3", inline=False)
+        embed.add_field(name="외모", value="7", inline=False)
+        embed.add_field(name="성격", value="5", inline=False)
+        embed.set_thumbnail(url="")
+        await message.channel.send(embed=embed)
+        
     if message.content.startswith(f'{PREFIX}정샌찬'):
         await message.channel.send('https://cdn.discordapp.com/attachments/969220566567489566/1078932702255923260/Sanmas.gif')
         
