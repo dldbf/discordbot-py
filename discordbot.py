@@ -356,7 +356,7 @@ async def on_message(message):
         embed.add_field(name="생일", value="10월 2일", inline=False)
         embed.add_field(name="종족", value="능력자", inline=False)
         embed.add_field(name="좋아하는 음식", value="양갱", inline=False)
-        embed.add_field(name="싫어하는 음식", value="홍", inline=False)
+        embed.add_field(name="싫어하는 음식", value="홍어", inline=False)
         embed.add_field(name="출생지", value="능력자도시 2구역", inline=False)
         embed.add_field(name="소속", value="능력자학교", inline=False)
         embed.add_field(name="취미", value="서적읽기", inline=False)
