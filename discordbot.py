@@ -476,7 +476,7 @@ async def on_message(message):
         embed.add_field(name="싫어하는 음식", value="피망", inline=False)
         embed.add_field(name="출생지", value="능력자도시 12구역", inline=False)
         embed.add_field(name="소속", value="능력자학교", inline=False)
-        embed.add_field(name="취미", value="영화보", inline=False)
+        embed.add_field(name="취미", value="영화보기", inline=False)
         embed.add_field(name="국적", value="능력자도시", inline=False)
         embed.add_field(name="가족관계", value="父 母 妻", inline=False)
         embed.add_field(name="신체특징", value="능력자학교의 교감 중 최강의 교감이다\n가족관계에서는 부인(처)로 표현되었지만 약혼녀이다\n짙은 초록색의 눈과 머리를 가지고 있다\n눈치가 상당히 빠른 편이다 작중 레안과 미나토의 싸움을 중재시키기도 한다", inline=False)
