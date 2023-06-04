@@ -490,7 +490,7 @@ async def on_message(message):
         embed.add_field(name="외모", value="7", inline=False)
         embed.add_field(name="성격", value="5", inline=False)
         embed.set_thumbnail(url="")
-        await message.channel.send(embed=embed
+        await message.channel.send(embed=embed)
         
     if message.content.startswith(f'{PREFIX}정샌찬'):
         await message.channel.send('https://cdn.discordapp.com/attachments/969220566567489566/1078932702255923260/Sanmas.gif')
