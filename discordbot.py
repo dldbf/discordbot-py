@@ -589,7 +589,7 @@ async def on_reaction_add(reaction, user):
     if user.bot == 1: #봇이면 패스
         return None
     if str(reaction.emoji) == "❌":
-        await reaction.channel.message.delete()
+        await reaction.message.delete()
         
         
 try:
