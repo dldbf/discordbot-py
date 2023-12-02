@@ -586,21 +586,11 @@ async def on_message(message):
 
 @client.event
 async def on_reaction_add(reaction, user):
-    id = user.id
-    guild = reaction.message.guild
-    member = guild.get_member(id)
-
-    permission = 0
-
-    try:
-        for role in member.roles:
-            if permission < role.position:
-                    permission = role.position
-    except: pass
+    i = (user.guild_permissions.administrator)
         
     if user.bot == 1: #봇이면 패스
         return None
-    if permission >= 12 or guild.owner_id == id:
+    if i is True:
         if str(reaction.emoji) == "❌":
             await reaction.message.delete()
         
