@@ -586,9 +586,10 @@ async def on_message(message):
 
 @client.event
 async def on_reaction_add(reaction, user):
+    i = (message.author.guild_permissions.administrator)
     if user.bot == 1: #봇이면 패스
         return None
-    if reaction.member.hasPermission("MANAGE_MESSAGES"):
+    if i is True:
         if str(reaction.emoji) == "❌":
             await reaction.message.delete()
         
