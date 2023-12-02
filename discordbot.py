@@ -585,7 +585,7 @@ async def on_message(message):
         await message.channel.send('https://cdn.discordapp.com/attachments/969220566567489566/1078932702255923260/Sanmas.gif')
         
 @client.event
-def check()
+def check(reaction)
     str(reaction.emoji) == '❌'
 
 @client.event
