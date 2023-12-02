@@ -584,22 +584,13 @@ async def on_message(message):
     if message.content.startswith(f'{PREFIX}정샌찬'):
         await message.channel.send('https://cdn.discordapp.com/attachments/969220566567489566/1078932702255923260/Sanmas.gif')
 
-            
 @client.event
-async def on_message(message):
-    if message.content.startswith("!청소 "):
-        purge_number = message.content.replace("!청소 ", "")
-        check_purge_number = purge_number.isdigit()
-
-        if check_purge_number == True:
-            if str(reaction.emoji) == "❌":
-                await message.channel.purge(limit=int(purge_number) + 1)
-                msg = await message.channel.send(f"**{purge_number}개**의 메시지를 삭제했습니다.")
-                await asyncio.sleep(5)
-                await msg.delete()
-
-        else:
-            await message.channel.send("올바른 값을 입력해주세요.")
+async def on_reaction_add(reaction, user):
+    if user.bot == 1: #봇이면 패스
+        return None
+    if str(reaction.emoji) == "❌":
+        await message.delete()
+        
 try:
     client.run(TOKEN)
 except discord.errors.LoginFailure as e:
