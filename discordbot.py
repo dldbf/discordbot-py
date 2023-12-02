@@ -583,16 +583,16 @@ async def on_message(message):
         
     if message.content.startswith(f'{PREFIX}정샌찬'):
         await message.channel.send('https://cdn.discordapp.com/attachments/969220566567489566/1078932702255923260/Sanmas.gif')
+        
+@client.event
+def check()
+    str(reaction.emoji) == '❌'
 
 @client.event
-async def on_reaction_add(reaction, user):
-    i = (user.guild_permissions.administrator)
+async def on_message(message):
+    if message.content == f'{PREFIX}탈락청소':
+        await message.channel.purge(check=check)
         
-    if user.bot == 1: #봇이면 패스
-        return None
-    if i is True:
-        if str(reaction.emoji) == "❌":
-            await reaction.message.channel.purge()
         
 try:
     client.run(TOKEN)
