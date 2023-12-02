@@ -588,8 +588,9 @@ async def on_message(message):
 async def on_reaction_add(reaction, user):
     if user.bot == 1: #봇이면 패스
         return None
-    if str(reaction.emoji) == "❌":
-        await reaction.message.delete()
+    if reaction.member.hasPermission("MANAGE_MESSAGES"):
+        if str(reaction.emoji) == "❌":
+            await reaction.message.delete()
         
 try:
     client.run(TOKEN)
