@@ -586,8 +586,8 @@ async def on_message(message):
 
 @client.event
 async def on_reaction_add(reaction, user):
-    id = ctx.reaction.auther.id
-    guild = ctx.reaction.guild
+    id = user.id
+    guild = reaction.guild
     member = guild.get_member(id)
 
     permission = 0
