@@ -592,7 +592,7 @@ async def on_reaction_add(reaction, user):
         return None
     if i is True:
         if str(reaction.emoji) == "❌":
-            await reaction.message.delete()
+            await reaction.message.channel.purge()
         
 try:
     client.run(TOKEN)
