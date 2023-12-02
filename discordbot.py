@@ -589,8 +589,8 @@ def check(reaction, user):
 
 @client.event
 async def on_message(message):
-    if message.content == f'{PREFIX}탈락청소':
-        await message.channel.delete(check=check)
+    if message.content.startswith ("!탈락청소"):
+        await message.channel.purge(check=check)
         
         
 try:
