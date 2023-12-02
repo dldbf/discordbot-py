@@ -584,7 +584,6 @@ async def on_message(message):
     if message.content.startswith(f'{PREFIX}정샌찬'):
         await message.channel.send('https://cdn.discordapp.com/attachments/969220566567489566/1078932702255923260/Sanmas.gif')
         
-@client.event
 def check(reaction, user):
     return user == message.author and str(reaction.emoji) == '❌'
 
