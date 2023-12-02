@@ -584,13 +584,10 @@ async def on_message(message):
     if message.content.startswith(f'{PREFIX}정샌찬'):
         await message.channel.send('https://cdn.discordapp.com/attachments/969220566567489566/1078932702255923260/Sanmas.gif')
         
-def check(reaction, user):
-    return user == message.author and str(reaction.emoji) == '❌'
-
 @client.event
-async def on_message(message):
-    if message.content.startswith ("!탈락청소"):
-        await message.channel.purge(check=check)
+async def on_reaction_add():
+    if reaction.emoji == "❌":
+        await reaction.channel.message.delete()
         
         
 try:
