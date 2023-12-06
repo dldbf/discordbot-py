@@ -584,7 +584,6 @@ async def on_message(message):
     if message.content.startswith(f'{PREFIX}정샌찬'):
         await message.channel.send('https://cdn.discordapp.com/attachments/969220566567489566/1078932702255923260/Sanmas.gif')
 
-@client.event
 @client.command()
 async def on_reaction_add(reaction, user):
     if user.bot == 1: #봇이면 패스
