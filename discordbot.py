@@ -591,7 +591,7 @@ async def on_message(message):
     if "[자캐신청]" in message.content:
         await message.channel.send("```cs\n신청이 완료되었습니다! 검사 확인중..\n```", reference=message)
 
-check_message = await message.channel.send("```cs\n신청이 완료되었습니다! 검사 확인중..\n```", reference=message)
+check_message = message.channel.send("```cs\n신청이 완료되었습니다! 검사 확인중..\n```", reference=message)
 
 @bot.event
 async def on_raw_reaction_add(payload):
