@@ -587,14 +587,13 @@ async def on_message(message):
         await message.channel.send('https://cdn.discordapp.com/attachments/969220566567489566/1078932702255923260/Sanmas.gif')
 
 @app.command()
+@client.event
 async def on_reaction_add(reaction, user):
     if user.bot == 1: #봇이면 패스
         return None
     if ctx.message.author.guild_permissions.administrator is True:  
         if str(reaction.emoji) == "❌":
             await reaction.message.channel.send("```cs\n해당 자캐가 '탈락'하였습니다\n24시간 후 해당 자캐가 삭제될 예정입니다\n자캐를 읽기 싫으시다면 지금 복사해두세요!", reference=message)
-            await asyncio.sleep(86400)
-            await reaction.message.delete()
 try:
     client.run(TOKEN)
 except discord.errors.LoginFailure as e:
