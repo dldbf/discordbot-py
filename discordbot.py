@@ -587,7 +587,6 @@ async def on_message(message):
         await message.channel.send('https://cdn.discordapp.com/attachments/969220566567489566/1078932702255923260/Sanmas.gif')
 
 @app.command()
-@client.event
 async def on_reaction_add(reaction, user):
     if user.bot == 1: #봇이면 패스
         return None
