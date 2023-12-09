@@ -595,7 +595,6 @@ check_message = await.channel.send("```cs\n신청이 완료되었습니다! 검�
 
 @bot.event
 async def on_raw_reaction_add(payload):
-    global check_message
 
     if payload.message_id != check_message.id and user.bot == True:
         return
