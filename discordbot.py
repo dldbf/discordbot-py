@@ -590,6 +590,20 @@ async def on_message(message):
 async def on_message(message):
     if "[자캐신청]" in message.content:
         await message.channel.send("```cs\n신청이 완료되었습니다! 검사 확인중..\n```", reference=message)
+
+check_message = await.channel.send("```cs\n신청이 완료되었습니다! 검사 확인중..\n```", reference=message)
+
+@bot.event
+async def on_raw_reaction_add(payload):
+    global check_message
+
+    if payload.message_id != check_message.id and user.bot == True:
+        return
+
+    if str(payload.emoji) == '❌':
+        await check_message.edit(content='```cs\n아쉽게도 자캐가 탈락하였습니다\n곧 자캐가 삭제 될 예정입니다!```')
+        
+        
             
 
 try:
