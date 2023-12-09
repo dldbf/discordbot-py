@@ -16,8 +16,6 @@ TOKEN = os.environ['TOKEN']
 
 client = discord.Client()
 
-msg = await.channel.send("```cs\n신청이 완료되었습니다! 검사 확인중..\n```")
-
 @client.event
 async def on_ready():
     print(f'Logged in as {client.user}.')
