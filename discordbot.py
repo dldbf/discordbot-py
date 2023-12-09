@@ -587,9 +587,9 @@ async def on_message(message):
         await message.channel.send('https://cdn.discordapp.com/attachments/969220566567489566/1078932702255923260/Sanmas.gif')
 
 @client.event
-    async def on_message(message):
-        if "[자캐신청]" in message.content:
-            await message.channel.send("```cs\n신청이 완료되었습니다! 검사 확인중..\n```", reference=message)
+async def on_message(message):
+    if "[자캐신청]" in message.content:
+        await message.channel.send("```cs\n신청이 완료되었습니다! 검사 확인중..\n```", reference=message)
             
 
 try:
