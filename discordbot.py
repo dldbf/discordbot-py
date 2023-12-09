@@ -586,12 +586,11 @@ async def on_message(message):
     if message.content.startswith(f'{PREFIX}정샌찬'):
         await message.channel.send('https://cdn.discordapp.com/attachments/969220566567489566/1078932702255923260/Sanmas.gif')
 
-@commands.Cog.listener()
-async def on_reaction_add(reaction, user):
-    if user.bot == 1: #봇이면 패스
-        return None
-    if str(reaction.emoji) == "❌":
-        await reaction.message.channel.send("```cs\n해당 자캐가 '탈락'하였습니다\n24시간 후 해당 자캐가 삭제될 예정입니다\n자캐를 읽기 싫으시다면 지금 복사해두세요!")
+@client.event
+    async def on_message(message):
+        if "[자캐신청]" in message.content:
+            await message.channel.send("```cs\n신청이 완료되었습니다! 검사 확인중..\n```", reference=message)
+
 try:
     client.run(TOKEN)
 except discord.errors.LoginFailure as e:
