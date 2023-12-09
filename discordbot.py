@@ -597,11 +597,11 @@ async def on_message(message):
 @bot.event
 async def on_raw_reaction_add(payload):
 
-    if payload.message_id != check_message.id and user.bot == True:
+    if payload.message_id != msg.id and user.bot == True:
         return
 
     if str(payload.emoji) == '❌':
-        await check_message.edit(content='```cs\n아쉽게도 자캐가 탈락하였습니다\n곧 자캐가 삭제 될 예정입니다!```')
+        await msg.edit(content='```cs\n아쉽게도 자캐가 탈락하였습니다\n곧 자캐가 삭제 될 예정입니다!```')
         
         
             
