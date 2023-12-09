@@ -590,6 +590,7 @@ async def on_message(message):
     async def on_message(message):
         if "[자캐신청]" in message.content:
             await message.channel.send("```cs\n신청이 완료되었습니다! 검사 확인중..\n```", reference=message)
+            
 
 try:
     client.run(TOKEN)
